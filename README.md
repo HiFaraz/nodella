@@ -11,6 +11,8 @@ Test Node.js version upgrades on your code
 
 # Installation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/HiFaraz/nodella.svg)](https://greenkeeper.io/)
+
 ```bash
 $ npm install --global nodella
 ```

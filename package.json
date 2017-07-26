@@ -1,0 +1,38 @@
+{
+  "name": "nodella",
+  "version": "0.1.0",
+  "description": "Test Node.js version upgrades on your code",
+  "main": "bin/nodella",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "request-promise": "^4.2.1",
+    "request": "^2.81.0",
+    "rimraf": "^2.6.1",
+    "semver": "^5.4.1",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "prettier": "^1.5.3"
+  },
+  "scripts": {
+    "quality": "npm run prettify && npm run lint",
+    "lint": "eslint --fix --format=table bin",
+    "prettify": "prettier --single-quote --trailing-comma es5 --write **/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiFaraz/nodella.git"
+  },
+  "keywords": ["node.js", "upgrade", "test"],
+  "author": "Faraz Syed <hello@farazsyed.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HiFaraz/nodella/issues"
+  },
+  "homepage": "https://github.com/HiFaraz/nodella#readme",
+  "bin": {
+    "nodella": "bin/nodella.js"
+  }
+}

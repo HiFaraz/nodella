@@ -184,7 +184,7 @@ function declareResults() {
     `Nodella test completed in ${Math.floor(process.hrtime(timer)[1] / 1e6) /
       1e3} seconds`
   );
-  process.exit(results.code || '1'); // only failures try to update the code. If they erase the code, signal a failure with code '`'
+  process.exit(results.code || '1'); // only failures try to update the code. If they erase the code, signal a failure with code '1'
 }
 
 function declareReversionFailure(code) {
